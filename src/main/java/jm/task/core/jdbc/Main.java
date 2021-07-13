@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException {
 
-        UserDaoJDBCImpl userDao = new UserDaoJDBCImpl();
+        UserServiceImpl userDao = new UserServiceImpl();
         userDao.createUsersTable();
         userDao.saveUser("Алексей" , "Курков", (byte) 19);
         userDao.saveUser("Феофан" , "Петров", (byte) 32);
